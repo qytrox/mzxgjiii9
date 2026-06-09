@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Links</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #ffffff;
+            --subtext-color: #8b949e;
+            --btn-bg: #21262d;
+            --btn-hover: #30363d;
+            --btn-border: #30363d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 580px;
+            text-align: center;
+        }
+
+        /* Profile Section */
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--btn-border);
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: var(--subtext-color);
+            margin: 0 0 32px 0;
+            line-height: 1.5;
+        }
+
+        /* Links Section */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .link-btn {
+            background-color: var(--btn-bg);
+            border: 1px solid var(--btn-border);
+            color: var(--text-color);
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-btn:hover {
+            background-color: var(--btn-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding-top: 40px;
+            font-size: 12px;
+            color: var(--subtext-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Header -->
+        <!-- Pro-tip: Replace the unspash URL with your GitHub avatar: https://github.com/YOUR_USERNAME.png -->
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Profile Picture" class="profile-img">
+        
+        <h1>@YourName</h1>
+        <p class="bio">Digital Creator | Sharing my journey, tutorials, and latest projects every week.</p>
+
+        <!-- Links Grid -->
+        <div class="links-container">
+            
+            <a href="https://instagram.com/YOUR_USERNAME" class="link-btn" target="_blank" rel="noopener noreferrer">
+                📸 Instagram
+            </a>
+
+            <a href="https://youtube.com/@YOUR_CHANNEL" class="link-btn" target="_blank" rel="noopener noreferrer">
+                📺 YouTube
+            </a>
+
+            <a href="https://github.com/YOUR_USERNAME" class="link-btn" target="_blank" rel="noopener noreferrer">
+                💻 GitHub Portfolio
+            </a>
+
+            <a href="https://yourwebsite.com" class="link-btn" target="_blank" rel="noopener noreferrer">
+                🌐 Personal Website
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        Powered by GitHub Pages
+    </footer>
+
+</body>
+</html>
